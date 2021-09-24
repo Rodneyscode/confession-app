@@ -1,0 +1,44 @@
+{% load static %}
+
+
+<!doctype html>
+
+<html>
+
+<head>
+
+   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+   
+   <title></title>
+</head>
+<body>
+
+
+{% block otherpages%}
+<div id="flexbox">
+   
+
+
+<span id="heading"> 
+   <a href="{% url 'writeaconfession' %}"> Write a Confession</a>
+   <a href="{% url 'confessionviewing' %}"> View Confessions</a>
+</span>
+
+
+<div id="the-welcome">
+
+   <h2>
+   <p>
+   Welcome to Confession space where you are free to confess anything you want. no names. no shame, no judgement. 
+   </p>
+   </h2>
+   
+</div>
+
+
+
+</div>
+
+{% endblock otherpages %}
+</body>
+</html>

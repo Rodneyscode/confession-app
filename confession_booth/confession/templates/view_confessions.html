@@ -1,0 +1,46 @@
+{% extends "first_temp.html" %}
+
+{% load static %}
+
+{% block otherpages %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/conviewstyle.css' %}">
+
+
+<div id="flexbox-three">
+   
+
+
+<span id="heading-two"> 
+   <a href="{% url 'mainpageview' %}"> Home Page</a>
+   <a href="{% url 'writeaconfession' %}"> Write a confession</a>
+</span>
+
+
+
+
+
+<div id="flexbox-three-three">
+   
+{% for x in allconfessions %}
+
+<h3>
+<p id="all-confessions">
+   {{x.confession}}----{{x.date}}
+</p>
+</h3>
+
+
+{% endfor %}
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+{% endblock otherpages %}

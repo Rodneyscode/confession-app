@@ -1,0 +1,34 @@
+
+#flexbox-three {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-bottom: 300px;
+}
+
+
+#flexbox-three-three {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 100px;
+
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+#heading-two {
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+	font-size: 200%;
+}
+
+
+#all-confessions {
+
+	color: white;
+}

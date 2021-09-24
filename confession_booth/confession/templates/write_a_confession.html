@@ -1,0 +1,38 @@
+
+{% extends "first_temp.html" %}
+
+{% load static %}
+
+{% block otherpages %}
+
+<div id="flexbox-two">
+   
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/writeconstyle.css' %}">
+
+<span id="heading-three"> 
+   <a href="{% url 'mainpageview' %}"> Home Page</a>
+   <a href="{% url 'confessionviewing' %}"> View Confessions</a>
+</span>
+
+
+<div id="flexbox-two-two">
+   
+
+
+<h1> What would you like to confess??? </h1>
+
+<form method="POST">
+   {% csrf_token %}
+   
+   {{confessform.as_p}}
+
+   <button id="confess-button"> confess it !!!</button>
+</form>
+
+</div>
+
+</div>
+
+
+{% endblock otherpages %}

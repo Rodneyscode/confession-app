@@ -1,0 +1,56 @@
+#flexbox-two {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-bottom: 300px;
+}
+
+
+#heading-three {
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+	font-size: 200%;
+}
+
+#flexbox-two-two {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 150px;
+}
+
+#confess-button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 100px;
+	background-color: blueviolet;
+	color: white;
+	padding: 10px 100px;
+	border-radius: 8px;
+	transition-duration: 0.5s;
+	border-style: none;
+}
+
+#confess-button:hover {
+	background-color: rebeccapurple;
+}
+
+
+
+input, textarea {
+	background-color: black;
+	color: white;
+}
+
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+h1 {
+
+	color: white;
+}
